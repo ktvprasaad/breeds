@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dog App</title>
+	<!--Favicon-->
+	<link rel="shortcut icon" href="img/dog-favicon.png" type="img/favicon-16x16.png" SameSite="none"/>
+	<!-- Reset the browser styling -->
+	<!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"> -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- Sriracha font from google -->
+	<link href="https://fonts.googleapis.com/css?family=Sriracha&display=swap" rel="stylesheet">
+	<!-- Link to css file -->
+	<link rel="stylesheet" href="css/styles.css" type="text/css">
+</head>
+<body class="container-fluid">
+	<nav class="navbar navbar-expand-lg navbar-light" style="background-color:ivory">
+		<a class="navbar-brand" href="index.html">
+			<h1 class="display-4">House of Dogs<span class="sr-only">(current)</span></h1>
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+			<form class="form-inline">
+					<label for="search" class="nav-link display-5">Search</label>
+					<input id="search" type="text" class="doggy" placeholder="my favorite breed..."/>
+			</form>
+		</div>
+	</nav>
+ <!-- To list all the pokemons from the pokemon api -->
+	<div class="dog-div row">
+	</div>
+	<!-- Bootstrap Modal -->
+	<div class="modal fade" id="dog-modal" tabindex="-1" role="dialog" aria-labelledby="pokemon-name" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h2 class="modal-title" id="pokemon-name">Breed</h2>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> -->
+	<!--Included for jQuery -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<!-- From bootstrap: https://getbootstrap.com/docs/4.3/getting-started/introduction/ - JS part and
+	to exclude $.ajax and all animations include slim.min.js version -->
+	<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="js/scripts.js" type="text/javascript"></script>
+	<!-- <script src="js/tota11y.min.js"></script> -->
+</body>
+</html>
